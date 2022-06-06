@@ -1,0 +1,9 @@
+<?php include_once('class.php');
+$web=new WEB;
+$enc=new encriptions;
+foreach(include('database.php')as $database)
+{
+	${strtoupper($database)}=new INSERT($database);
+}
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+?>

@@ -1,0 +1,44 @@
+[24-Apr-2022 19:38:37 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Call to a member function count() on null in /home4/ai7inxll/public_html/newsite_ei/Admin/index.php:22
+Stack trace:
+#0 {main}
+  thrown in /home4/ai7inxll/public_html/newsite_ei/Admin/index.php on line 22
+[22-May-2022 13:04:34 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Call to a member function count() on null in /home4/ai7inxll/public_html/newsite_ei/Admin/index.php:22
+Stack trace:
+#0 {main}
+  thrown in /home4/ai7inxll/public_html/newsite_ei/Admin/index.php on line 22
+[22-May-2022 21:38:05 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Call to a member function count() on null in /home4/ai7inxll/public_html/newsite_ei/Admin/index.php:22
+Stack trace:
+#0 {main}
+  thrown in /home4/ai7inxll/public_html/newsite_ei/Admin/index.php on line 22
+[28-May-2022 09:22:32 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Call to a member function count() on null in /home4/ai7inxll/public_html/engineeringinnovations.in/Admin/index.php:22
+Stack trace:
+#0 {main}
+  thrown in /home4/ai7inxll/public_html/engineeringinnovations.in/Admin/index.php on line 22
+[28-May-2022 09:24:23 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Call to a member function count() on null in /home4/ai7inxll/public_html/engineeringinnovations.in/Admin/index.php:22
+Stack trace:
+#0 {main}
+  thrown in /home4/ai7inxll/public_html/engineeringinnovations.in/Admin/index.php on line 22
+[28-May-2022 09:24:32 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Call to a member function count() on null in /home4/ai7inxll/public_html/engineeringinnovations.in/Admin/index.php:22
+Stack trace:
+#0 {main}
+  thrown in /home4/ai7inxll/public_html/engineeringinnovations.in/Admin/index.php on line 22
+[28-May-2022 09:24:39 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Call to a member function count() on null in /home4/ai7inxll/public_html/engineeringinnovations.in/Admin/index.php:22
+Stack trace:
+#0 {main}
+  thrown in /home4/ai7inxll/public_html/engineeringinnovations.in/Admin/index.php on line 22
+[28-May-2022 10:39:13 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Call to a member function count() on null in /home4/ai7inxll/public_html/engineeringinnovations.in/Admin/index.php:22
+Stack trace:
+#0 {main}
+  thrown in /home4/ai7inxll/public_html/engineeringinnovations.in/Admin/index.php on line 22
+[28-May-2022 13:37:59 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Call to a member function count() on null in /home4/ai7inxll/public_html/engineeringinnovations.in/Admin/index.php:22
+Stack trace:
+#0 {main}
+  thrown in /home4/ai7inxll/public_html/engineeringinnovations.in/Admin/index.php on line 22
+[02-Jun-2022 14:31:26 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Call to a member function count() on null in /home4/ai7inxll/public_html/engineeringinnovations.in/Admin/index.php:22
+Stack trace:
+#0 {main}
+  thrown in /home4/ai7inxll/public_html/engineeringinnovations.in/Admin/index.php on line 22
+[02-Jun-2022 14:32:08 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Call to a member function count() on null in /home4/ai7inxll/public_html/engineeringinnovations.in/Admin/index.php:22
+Stack trace:
+#0 {main}
+  thrown in /home4/ai7inxll/public_html/engineeringinnovations.in/Admin/index.php on line 22
