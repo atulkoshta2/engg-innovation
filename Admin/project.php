@@ -356,7 +356,7 @@ if ($id != '') {
 
 
 
-                                    <div class="table-responsive">
+                                    <div class="table-responsive table-sm">
 
 
 
@@ -464,6 +464,11 @@ if ($id != '') {
                                                         </td>
                                                         <td>
                                                             <ul class="orderDatatable_actions mb-0 d-flex flex-wrap">
+                                                                <li>
+                                                                    <a href="project-detail?<?= $enc->enc1($Value['projectID']) ?>" class="action">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#2c99ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-right"><polyline points="13 17 18 12 13 7"></polyline><polyline points="6 17 11 12 6 7"></polyline></svg>
+                                                                    </a>
+                                                                </li>
                                                                 <li>
                                                                     <a href="?<?= $enc->enc1($Value['projectID']) ?>" class="edit">
                                                                         <span data-feather="edit"></span>

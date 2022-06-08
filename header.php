@@ -10,7 +10,7 @@
                <ul>
                   <li class="active"><a href="index.php">Home</a></li>
                   <li class="has-dropdown">
-                     <a href="project.php">Projects</a>
+                     <a href="project.php"><span style="padding:36px;"> Projects</span></a>
                      <ul class="dropdown">
                         <li><a href="#">Before3rdWave.com Increase Width</a></li>
                         <li><a href="#">Citizen Score</a></li>

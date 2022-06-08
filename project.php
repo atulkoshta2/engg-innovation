@@ -65,14 +65,15 @@
                   foreach ($PROJECT->fetch() as $value) { ?>
                      <div class="col-md-4 animate-box">
                         <div class="project-entry">
-                           <a href="javascript:void(0);" onclick="showForm();" class="project-img text-center" style="background-image: url(image/<?= $value['image'] ?>);">
+                           <!-- <a href="javascript:void(0);" onclick="showForm();" class="project-img text-center" style="background-image: url(image/<?= $value['image'] ?>);"> -->
+                           <a href="project-detail.php?<?= $enc->enc1($value['projectID']); ?>   " class="project-img text-center" style="background-image: url(image/<?= $value['image'] ?>);">
                               <span class="icon">
-                                 <div style="background-color:#999898; padding: 10px;">
+                                 <!-- <div style="background-color:#999898; padding: 10px;">
                                     <?php if ($value['description'] != '') { ?>
                                        <p style="color:white;text-align: justify;"><?php echo $value['description']; ?></p>
                                     <?php } ?>
                                        <p class="btn btn-danger px-5" style="text-align: justify;">Enquire Now</p>
-                                    </div>
+                                 </div> -->
                            </a>
                            <div class="desc">
                               <h4><?= $value['title'] ?> &nbsp; <?php if ($value['playstore_link'] != '') { ?> <a href="<?= $value['playstore_link'] ?>" title="Play Store Link" target="_blank"><img src="images/android.png" height="20px" width="20px"></a> <?php }
@@ -90,54 +91,6 @@
       </div>
       <!-- Modal -->
 
-      <div class="modal inmodal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static" data-keyboard="false">
-         <div class="modal-dialog">
-            <div class="modal-content loader-parent" style="background-color: #f5f5f5;">
-               <div class="sk-spinner sk-spinner-double-bounce">
-                  <div class="sk-double-bounce1"></div>
-                  <div class="sk-double-bounce2"></div>
-               </div>
-               <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">
-                     <span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
-                  </button>
-                  <h4 class="modal-title">Add User</h4>
-               </div>
-               <form role="form" id="enquiry" method="post" enctype="multipart/form-data">
-                  <div class="modal-body">
-                     <div class="row form-group">
-                        <div class="col-md-12">
-                           <input type="text" id="name" name="name" class="form-control" placeholder="Your name (optional)" >
-                        </div>
-                     </div>
-                     <div class="row form-group">
-                        <div class="col-md-6">
-                           <input type="email" id="email" name="email" class="form-control" placeholder="Email address (optional)" >
-                        </div>
-                        <div class="col-md-6">
-                           <input type="text" id="mobile" minlength="10" maxlength="10" onkeypress="return IsNumeric(event);" name="phone" class="form-control" placeholder="10 digit mobile no" required>
-                        </div>
-                     </div>
-                     <div class="row form-group">
-                        <div class="col-md-12">
-                           <textarea id="message" name="message" cols="30" rows="4" class="form-control" placeholder="Detailed Enquiry (optional)" ></textarea>
-                        </div>
-                     </div>
-                     <div class="form-group text-center">
-                        <input type="submit" value="Send Message" class="btn btn-primary text-center">
-                        <button type="button" class="btn btn-white" data-dismiss="modal">
-                           Close
-                        </button>
-                     </div>
-                  </div>
-                  <div class="modal-footer">
-                    <p id="msg"></p>
-                  </div>
-               </form>
-               
-            </div>
-         </div>
-      </div>
 
       <?php include_once("footer.php"); ?>
    </div>
@@ -148,54 +101,3 @@
 </body>
 
 </html>
-<?php 
-$url = 'php/contact?';
-$link = $url . $enc->enc1('ENQUIRY');
-?>
-
-<script>
-   function showForm() {
-      $("#name, #email, #mobile, #message").val("");
-      $("#msg").html("");
-      $(".modal-title").html("Enquiry Form / Book Demo");
-      $("#myModal").modal("show");
-   }
-
-   $(document).ready(function(ddds) {
-
-      $("#enquiry").on('submit', (function(ddds) {
-          ddds.preventDefault();
-         $.ajax({
-            url: "<?= $link ?>",
-            type: "POST",
-            data: new FormData(this),
-            contentType: false,
-            cache: false,
-            processData: false,
-            success: function(data) {
-               $("#msg").html(data);
-               setTimeout(
-                  function(){ $('#myModal').modal('hide'); 
-               }, 4000);
-
-            },
-
-            error: function(error) {
-               $("#msg").html(error);
-            }
-         });
-
-      }));
-
-   });
-
-
-function IsNumeric(evt) {
-    evt = (evt) ? evt : window.event;
-    var charCode = (evt.which) ? evt.which : evt.keyCode;
-    if (charCode > 31 && (charCode < 48 || charCode > 57)) {
-        return false;
-    }
-    return true;
-}
-</script>

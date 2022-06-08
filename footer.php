@@ -121,6 +121,47 @@
       </div>
    </div>
 </footer>
+   <div class="whatsapp">
+      <a target="_blank" href="https://wa.me/+919516703294?text=Hello Engineering Innovation!">
+      <i class="icon-whatsapp myclass"></i>
+      </a>
+   </div>
+
+<style>
+   .whatsapp {
+      /* bottom:0;
+      z-index: 999;
+      right:0;
+      margin-bottom:8em;
+      margin-right:1em;
+      position:fixed;
+      color:black; */
+   animation: blinkingBackground 3s infinite;
+   position:fixed;
+	width:60px;
+	height:60px;
+	bottom:100px;
+	right:20px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:30px;
+	text-align:center;
+  font-size:38px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+   }
+   @keyframes blinkingBackground{
+		0%		{ background-color: #25d366;}
+		25%		{ background-color: #ccc;}
+		50%		{ background-color: #25d656;}
+		75%		{ background-color: #ccc;}
+		100%	        { background-color: #25d366;}
+	}
+   .myclass {
+      margin-top:24px;
+      color:#fff;
+   }
+</style>
 <script src="js/jquery.min.js" type="text/javascript"></script>
 
 <script src="js/jquery.easing.1.3.js" type="text/javascript"></script>

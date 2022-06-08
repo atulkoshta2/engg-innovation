@@ -23,6 +23,7 @@ $web->session_check($web->session_get('adminID'));
     <link rel="stylesheet" href="css/plugin.min.css">
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../fonts/flaticon/font/flaticon.css" />
 
     <link rel="icon" type="image/png" sizes="16x16" href="../images/logo.png">
     <!-- <style>
@@ -40,6 +41,13 @@ $web->session_check($web->session_get('adminID'));
             }
     </style> -->
 
+    <style>
+        i {
+            font-size: 40px;
+            color: #f7b633;
+        }
+    </style>
+    
 </head>
 
 <body class="layout-dark side-menu overlayScroll">

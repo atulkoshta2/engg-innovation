@@ -176,6 +176,36 @@ class INSERT
 		}
 			return $array;
 	}
+	//////////////////////////
+	function fetch_where($fil)
+	{
+		$array=array();
+		$array=array();
+		if(!empty($fil))
+		{
+			$cond="";
+			$i=1;
+			foreach($fil as $key =>$value)
+			{
+				if($i==1)
+				{
+					$cond.="`$key`".'='."'$value'";
+				}
+				else{
+					$cond.=" AND "."`$key`".'='."'$value'";
+				}
+				$i++;
+			}
+			 $qry="SELECT * FROM `$this->table` WHERE $cond";
+		}
+		$sql=mysqli_query($this->conn,$qry);
+		while($fetch=mysqli_fetch_assoc($sql))
+		{
+			$fetch['path']=$this->path;
+			array_push($array,$fetch);
+		}
+			return $array;
+	}
 	///////////////
 	function insert($value,$debug=false)
 	{

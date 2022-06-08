@@ -22,7 +22,7 @@ extract($web->sanitizer($_POST));
 			$web->danger('Email Already Exist');
 		}
 		else{
-			$_POST['strtotime']=strtotime('now');
+			// $_POST['strtotime']=strtotime('now');
 				$ins=$SUBSCRIBE->insert($_POST);
 			if($ins)
 			{
